@@ -55,7 +55,7 @@ axios.get('https://api.github.com/users/WilliamBerlin76')
   console.log('the data was not returned', error)
 })
 
-const followersArray = ['emilyeri', 'lowell1', 'rushman7', 'ndacode', 'DtJohnson5', 'adbirahmanfarah'];
+const followersArray = ['emilyelri', 'lowell1', 'rushman7', 'ndacode', 'DtJohnson5', 'abdirahmanfarah'];
 
 followersArray.forEach(item => {
   axios.get(`https://api.github.com/users/${item}`)
