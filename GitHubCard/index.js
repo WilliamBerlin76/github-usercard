@@ -3,6 +3,9 @@
            https://api.github.com/users/<your name>
 */
 axios.get('https://api.github.com/users/WilliamBerlin76')
+.then(response => {
+  console.log(response);
+})
 /* Step 2: Inspect and study the data coming back, this is YOUR 
    github info! You will need to understand the structure of this 
    data in order to use it to build your component function 
@@ -45,7 +48,39 @@ const followersArray = [];
 </div>
 
 */
+function makeCard(cardInfo) {
+  const card = document.createElement('div'),
+        picture = document.createElement('img'),
+        info = document.createElement('div'),
+        name = document.createElement('h3'),
+        userName = document.createElement('p'),
+        location = document.createElement('p'),
+        profile = document.createElement('p'),
+        profileLink = document.createElement('a'),
+        followers = document.createElement('p'),
+        following = document.createElement('p'),
+        bio = document.createElement('p');
 
+        // structure
+        card.appendChild(picture);
+        card.appendChild(info);
+        info.appendChild(name);
+        info.appendChild(userName);
+        info.appendChild(location);
+        info.appendChild(profile);
+        info.appendChild(followers);
+        info.appendChild(following);
+        info.appendChild(bio);
+        profile.appendChild(profileLink);
+
+        //classes
+        card.classList.add('card');
+        info.classList.add('card-info');
+        name.classList.add('name');
+        userName.classList.add('username');
+
+
+}
 /* List of LS Instructors Github username's: 
   tetondan
   dustinmyers
