@@ -103,7 +103,7 @@ function makeCard(cardInfo) {
         userName.textContent = cardInfo.login;
         location.textContent = `Location: ${cardInfo.location}`;
         profileLink.href = cardInfo.html_url;
-        profileLink.textContent = cardInfo.html_url;
+        profileLink.textContent = 'Profile: ' + cardInfo.html_url;
         followers.textContent = `Followers: ${cardInfo.followers}`;
         following.textContent = `Following: ${cardInfo.following}`;
         bio.textContent = `Bio: ${cardInfo.bio}`;
